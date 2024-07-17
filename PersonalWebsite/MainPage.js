@@ -18,7 +18,6 @@ function newPage(){
   //I am going to write/copy all of this and feel proud lmao
     const textElement = document.getElementById('textElement');
 
-  
   //Listen for the CSS transition to end, then transition the page
     textElement.addEventListener('transitionend', () => {
       //Check if the opacity is zero

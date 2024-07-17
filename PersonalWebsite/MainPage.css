@@ -46,11 +46,10 @@ body {
 
 /*Animation Object*/
 .moon {
-  width: 50px;
-  height: 50px;
-  background-color: rgb(54, 52, 52);
-  border-radius: 50px;    
+  width: 90px;
+  height: 100px;
   position: absolute;
+  bottom: 1000%;
 }
 
 
@@ -77,17 +76,20 @@ body {
 }
 
 
-/*DEBUG!!*/
+/*Container for the object/planets that are rotating*/
 .moonContainer {
-  position: absolute;
-  animation: rotate 5s infinite linear reverse;    
-  transform-origin: 400px,300px;
-  right: px;
+  /*Animation and positioning*/
+  position: relative;
+  animation: rotate 12s infinite linear reverse;    
+  
+  top: 40%;
+  right: 50%;
+  left: 50%;
+  transform-origin: 100px 100px;
 }
 
 .staticRotate {
-  animation: rotate 5s infinite linear;
-  transform-origin: 400px,300px;
+  position: relative;
 }
 
 

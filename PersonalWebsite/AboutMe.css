@@ -33,9 +33,10 @@
 }
 /************************************************/
 
+
 /*Images*/
 /************************************************/
-.image1{
+.image0{
   /*Set the dimensions of the image*/
     width: 300px;
     height: 300px;
@@ -43,8 +44,18 @@
 /************************************************/
 
 
-/*Font Style & Size*/
+/*Font Style & Size of text*/
 /************************************************/
+/*Set the font size and style*/
+body{
+  /*Font Styling*/
+  font-size: 20px;
+  background-color: black;
+  
+  /*Text Alignment*/  
+  text-align: center;
+}  
+
 
 /*About Me Header*/
 h1{
@@ -54,22 +65,59 @@ h1{
   -webkit-text-fill-color: white;
 }
 
-/*Set the font size and style*/
-body{
-  /*Font Styling*/
-    font-size: 20px;
-    font-family: 'Times New Roman';
-    background-color: black;
 
-  /*Text Alignment*/  
-  text-align: center;
-}  
+/*Smaller header*/
+h2{
+  /*Set the font size and style*/
+  font-size: 34px;
+  -webkit-text-fill-color: white;
+}
+
 
 /*Body text #1, 'About Me', we reference via 'id'*/
-#body-text-1{
+.body-text-0{
   /*Font Styling*/
-    -webkit-text-fill-color: white;  
-    font-size: 20px;
+  -webkit-text-fill-color: gray;  
+  font-size: 20px;
+}
+/************************************************/
+
+
+
+/*Animation & Art*/
+/************************************************/
+/*TEST OF ARTISTIC SKILLS!
+MAKE A ROSE!*/
+
+/*Container for the rose you want to create*/
+.rose{
+  /*Pixels & Position*/
+    height: 50px;
+    width: 50px;
+    position: absolute;
+  }
+  
+.pedal0{    
+  /*Pixels & Position*/
+    height: 25px;
+    width: 25px;
+    border-radius: 25px;
+    background-color: red;
+    top: 65px;
+    left: -80px;
+
+    position: absolute;
+}
+  
+
+/*DEBUG OBJECT [RED CIRCLE]*/
+.circle0{
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  background-color: red;
+  position: absolute;
+  top: 200px;
 }
 /************************************************/
 
@@ -90,12 +138,4 @@ body{
   border: 1px solid #ccc;
   border-radius: 5px;
 }
-
-
-/*  [Horizontal Alignment box (template!!)]
-.horizontal1 {
-  display: flex;
-  gap: 10px;  
-}
-*/
 /************************************************/
