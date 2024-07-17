@@ -19,7 +19,14 @@
 
 //Go Back Button
   function goBack(){
+    //Select the button object/element
+      var goBack = document.getElementById('goBackButton');
 
+    //Action-Event handling for the button being clicked
+      goBack.addEventListener('click', function() {
+        //Return the user back to the welcome page
+          window.location.href = 'MainPage.html';
+      });
   }
 //
 

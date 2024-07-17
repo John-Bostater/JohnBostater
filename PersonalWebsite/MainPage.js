@@ -26,29 +26,8 @@ function newPage(){
           //Transition to the new page
             window.location.href = 'AboutMe.html';
         }
-
-    });
-
-
-
-
-
-
-
-  //Call upon the Html document object via "document", get the element we would like to
-  //manipulate via "getElementById"
-  //document.getElementById('textElement').addEventListener('transitionend', function(event) {
-    //DEBUG!
-      //alert("Opacity: " + getComputedStyle(event.target).opacity);
-
-      //Change the html document once the opacity of the text has reached zero  
-    //    if() {
-          //Load the new "About Me" page via it's html document
-      //      window.location.href = "AboutMe.html"; // URL of the new page
-        //}
-  //  });      
+    });      
 }
-
 
 //Include more animations for this page!!
 

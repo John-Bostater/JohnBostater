@@ -1,26 +1,58 @@
 /*
-  This CSS file will contain all of the relevant text font specification
+[Author]: John Bostater
+
+[Start Date]: 7/16/24
+
+[Description]:
+  This CSS document contains all of the relevant fonts, styles, & animations 
+  for my Websites "About Me" page :)
 */
+
+
+/*Buttons*/
+/************************************************/
+
+/*Go Back to Welcome Page*/
+.goBackButton{
+  /*Font size and style*/
+    font-size: 18px;
+    font-family: '';
+    font-weight: bold;
+    border-radius: 10px;
+    border-color: transparent;
+    padding: 10px;
+
+  /*Change the cursor upon the user hovering*/
+    cursor: pointer;
+}
+
+/*Change the color of the button upon hovering*/
+.goBackButton:hover{
+    background-color: #6484db;
+}
+
+/************************************************/
+
+/*Images*/
+/************************************************/
+.image1{
+  /*Set the dimensions of the image*/
+    width: 300px;
+    height: 300px;
+}
+/************************************************/
 
 
 /*Font Style & Size*/
 /************************************************/
 
-/*About Me*/
+/*About Me Header*/
 h1{
   /*Set the font size and style*/
   font-size: 48px;
+  font-style: italic;
   -webkit-text-fill-color: white;
 }
-
-
-/*Body text #1, 'About Me'*/
-p1{
-  /*Font Styling*/
-    -webkit-text-fill-color: white;  
-    font-size: 20px;
-}
-
 
 /*Set the font size and style*/
 body{
@@ -29,8 +61,15 @@ body{
     font-family: 'Times New Roman';
     background-color: black;
 
-  /*Text Alignment*/
+  /*Text Alignment*/  
   text-align: center;
+}  
+
+/*Body text #1, 'About Me', we reference via 'id'*/
+#body-text-1{
+  /*Font Styling*/
+    -webkit-text-fill-color: white;  
+    font-size: 20px;
 }
 /************************************************/
 
