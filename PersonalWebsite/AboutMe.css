@@ -16,11 +16,12 @@
 .goBackButton{
   /*Font size and style*/
     font-size: 18px;
-    font-family: '';
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     border-radius: 10px;
     border-color: transparent;
     padding: 10px;
+    background-color: gray;
 
   /*Change the cursor upon the user hovering*/
     cursor: pointer;
@@ -28,9 +29,8 @@
 
 /*Change the color of the button upon hovering*/
 .goBackButton:hover{
-    background-color: #6484db;
+   background-color: #6484db;
 }
-
 /************************************************/
 
 /*Images*/
@@ -82,7 +82,7 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
   
   /*BELOW IS FOR OUTLINING YOUR BOX FOR DEBUGGING*/
   /*DELETE BEFORE LAUNCH!!*/
