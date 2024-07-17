@@ -1,0 +1,42 @@
+/*Text*/
+/****************************************************************************************/
+
+/*Set the font and alignment of the welcome text*/
+body {    
+    /**/
+      font-family: 'Times New Roman';
+      font-size: 100px;
+      font-weight: bold;
+      -webkit-text-fill-color: white;
+      background-color: black;    
+
+    /*Set the alignment of the text to the center of the page*/
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
+}
+
+/*Transparent container for containing the text-transition target space*/
+.hover-container{
+  background-color: transparent;
+}
+
+/* We give the id name "textElement" to the body element upon the user's mouse hover*/
+.hover-container:hover #textElement{
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  cursor: default;
+
+}
+/****************************************************************************************/
+
+
+/*Animations*/
+/******************************************************/
+
+
+
+/******************************************************/

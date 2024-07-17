@@ -1,0 +1,62 @@
+/*
+  This CSS file will contain all of the relevant text font specification
+*/
+
+
+/*Font Style & Size*/
+/************************************************/
+
+/*About Me*/
+h1{
+  /*Set the font size and style*/
+  font-size: 48px;
+  -webkit-text-fill-color: white;
+}
+
+
+/*Body text #1, 'About Me'*/
+p1{
+  /*Font Styling*/
+    -webkit-text-fill-color: white;  
+    font-size: 20px;
+}
+
+
+/*Set the font size and style*/
+body{
+  /*Font Styling*/
+    font-size: 20px;
+    font-family: 'Times New Roman';
+    background-color: black;
+
+  /*Text Alignment*/
+  text-align: center;
+}
+/************************************************/
+
+
+/*Alignment*/
+/************************************************/
+
+/*Encapsulating vertical alignment for the page*/
+.vertical0{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  
+  /*BELOW IS FOR OUTLINING YOUR BOX FOR DEBUGGING*/
+  /*DELETE BEFORE LAUNCH!!*/
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+/*  [Horizontal Alignment box (template!!)]
+.horizontal1 {
+  display: flex;
+  gap: 10px;  
+}
+*/
+/************************************************/
