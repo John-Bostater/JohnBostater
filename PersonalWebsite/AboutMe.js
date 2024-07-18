@@ -31,22 +31,6 @@
 //
 
 
-//New/random debug
-  function userEnteredText(){
-
-alert('It worked!');
-
-// Get references to the elements
-const header = document.getElementById('header');
-const textInput = document.getElementById('textInput');
-
-// Add event listener to the textarea for live updates
-textInput.addEventListener('input', function() {
-    // Update the <h1> with the current value of the textarea
-    header.textContent = textInput.value;
-});
-  
-  }
 //-------------------------------------------------------------
 
 
