@@ -25,9 +25,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  margin: 0;
-  text-align: center;
+  position: absolute;
+
+  left: 50%;
+  right: 50%;
+  bottom: 50%;
+  top: 50%;
 }
 
 
@@ -46,10 +49,14 @@ body {
 
 /*Animation Object*/
 .moon {
-  width: 90px;
   height: 100px;
-  position: absolute;
-  bottom: 300%;
+  width: 90px;
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 200px;
 }
 
 
@@ -81,16 +88,16 @@ body {
   /*Animation and positioning*/
   position: absolute;
   animation: rotate 12s infinite linear reverse;    
-
-  top: 50%;
-  bottom: 50%;
-  left: 50%;
-  right: 50%;
   
+  top:50%;
+  bottom:50%;
+  left:50%;
+  right:50%;
 }
 
 .staticRotate {
-  position: relative;
+  position: absolute;
+  animation: rotate 12s infinite linear;
 }
 
 
