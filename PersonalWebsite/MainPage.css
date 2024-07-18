@@ -49,14 +49,18 @@ body {
 
 /*Animation Object*/
 .moon {
-  height: 100px;
-  width: 90px;
+  /*Object dimensions & styling*/
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    background-color: rgb(88, 87, 87);
 
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: 200px;
+  /*Positioning*/
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 200px;
 }
 
 
@@ -66,8 +70,8 @@ body {
   background-color: gray;
   border-radius: 10px;  
   position: relative;
-  left: 20px;
-  top: 30px;
+  left: 34px;
+  top: 24px;
 }
 
 
@@ -78,8 +82,8 @@ body {
   border-radius: 10px;  
   position: relative;
   margin: 0;
-  left: 24px;
-  top: 20px;
+  left: 22px;
+  top: 22px;
 }
 
 
