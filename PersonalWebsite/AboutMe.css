@@ -97,16 +97,6 @@ h2{
 
 /*Animation & Art*/
 /************************************************/
-/*Line for page breaks*/
-.page-break{
-  background-color: white;
-  height: 1px;
-  width: 70%;
-  justify-items: center;
-  position: relative;
-}
-
-
 /*TEST OF ARTISTIC SKILLS! MAKE A cactus!*/
 /*'About Me' art container*/
 
@@ -138,15 +128,12 @@ h2{
 
 /*Encapsulating vertical alignment for the page*/
 .vertical0{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 5px;
+  text-align: center;
   
   /*BELOW IS FOR OUTLINING YOUR BOX FOR DEBUGGING*/
   /*DELETE BEFORE LAUNCH!!*/
-  padding: 20px;
+  /*padding: 20px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 5px;*/
 }
 /************************************************/
