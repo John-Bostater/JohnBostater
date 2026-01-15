@@ -92,6 +92,12 @@ h2{
   -webkit-text-fill-color: #d1d1d1;
 }
 
+h3{
+  /*Set the font size and style*/
+  font-size: 50px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  -webkit-text-fill-color: #6c6c6c;
+}
 
 /*Body text #1, 'About Me', we reference via 'id'*/
 .body-text-0{
