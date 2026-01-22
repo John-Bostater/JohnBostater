@@ -36,7 +36,7 @@ body{
 h1{
   /*Set the font size and style*/
   -webkit-text-fill-color: white;
-  font-size: 100px;
+  font-size: 5vw;
 }
 
 
@@ -59,7 +59,19 @@ h3{
 .body-text-0{
   /*Font Styling*/
   -webkit-text-fill-color: gray;  
-  font-size: 20px;
+  font-size: 1vw;
+}
+
+
+/*Text box for the main page*/
+.textBox{
+
+  /*Font Styling*/
+  -webkit-text-fill-color: gray;  
+  font-size: 1.5vw;
+  border: 2px solid white;
+  padding: 7%;
+  margin-top: -6.5%;
 }
 
 
@@ -112,29 +124,31 @@ h3{
 }
 
 
-/*Beach Background Image*/
-.beachBackground{
-
-  width: 100%; display: block;
-  object-fit: contain;
-}
-
 
 /*Beach Background Image*/
 .duneBackground{
 
-  width: 50%; display: block;
+  width: 30%; height: 3%; display: block;
 }
 
 
-/*Birds flying*/
+/*Scorpion Moving*/
 .scorpionManz{
 
   /*Set the dimensions of the image*/
-  position: absolute; top: 0; left: 0; width:20%; height:100%;
-  animation: scorpionSneak 3s;
-  transform: translateX(10%)
+  width:3.5%; height:3.5%; display: block;
+  animation: scorpionSneak 2s ease-in;
+  transform: translate(550%, -220%);
 }
+
+
+/*Cactus*/
+.cactus{
+
+  width: 2%; height: 4%; display: block;
+  transform: translate(600%, -105%)
+}
+
 
 /************************************************/
 
@@ -143,23 +157,64 @@ h3{
 /*Animation & Art*/
 /************************************************/
 
+
+/*Moon & Sun*/
+.moon{
+  margin-left: 25%;
+  width: 10%; display: block;
+  transform: translateY(-200%);
+  animation: fadeInOut 2s ease-in, planetBob 10s ease-in-out infinite;
+}
+
+
+/* Welcome Text on the mainpage*/
 .welcomeText{
   opacity: 0;
   transform: translateY(20px); /*Start Below Normal*/
-  animation: fadeUp 2s ease-out forwards;
-
+  animation: fadeDown 2s ease-out forwards;
 }
 
 
-/*Fade up Animation*/
+/*Cloud*/
+.cloud{
+  margin-left: 25%;
+  width: 10%; display: block;
+  animation: cloudAnim 13s infinite;
+}
+
+
+/*Fade Down Animation*/
 /*===============================================*/
-@keyframes fadeUp {
+@keyframes fadeDown {
   to {
     opacity: 1;
-    transform: translateY(0px);
+    transform: translateY(100%);
   }
 }
 /*===============================================*/
+
+/*Fade In and Out Animation*/
+@keyframes fadeInOut{
+  from{opacity:0;}
+  to{opacity: 1;}
+}
+
+
+/*Animation for the clouds movements*/
+@keyframes cloudAnim{
+  0% {
+    opacity: 0;
+    transform: translateY(0%);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-10%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(0%);
+  }
+}
 
 
 /*Fade Left to Right Animation*/
@@ -167,14 +222,47 @@ h3{
 @keyframes scorpionSneak {
   from {
     opacity: 0;
-    transform: scale(1) translateX(0%);
+    transform: scale(1) translate(800%, -220%);
   }
   to {
     opacity: 1;
-    transform: scale(1) translateX(10%);
+    transform: scale(1) translate(550%, -220%);
   }
 }
 /*===============================================*/
+
+
+
+/*Fade Up Animation*/
+@keyframes planetRise {
+  from {
+    opacity: 0;
+    transform: scale(1) translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(-100%);
+  }
+}
+
+
+/*Bob Animation*/
+/*===============================================*/
+@keyframes planetBob {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(-30%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+/*===============================================*/
+
+
+
 
 
 /************************************************/
@@ -186,16 +274,18 @@ h3{
 /*Encapsulating vertical alignment for the page*/
 .vertical0{
   text-align: center;
+  justify-content: center;
 }
 /************************************************/
 
 
 /*
-[Generative AI Used]: ChatGPT (OpenAI, January 21-22, 2026) 
+[Generative AI Statement]: ChatGPT (OpenAI, January 21, 2026 to Indefinite End of Project) 
 
 [Purpose]: Used AI for examples of animations and how to implement dynamic scaling into my program.
 
 [Note]: 
   The fade in and scorpion walk animations are courtesy of chat. 
   Just needed a quick refresher so being able to copy n paste it in was nice.
-  As alwasy I marked off the AI generated code with /*================*/
+  As alwasy I marked off the AI generated code between comments marked /*================
+*/
