@@ -170,14 +170,13 @@ h3{
 /* Welcome Text on the mainpage*/
 .welcomeText{
   opacity: 0;
-  transform: translateY(20px); /*Start Below Normal*/
   animation: fadeDown 2s ease-out forwards;
 }
 
 
 /*Cloud*/
 .cloud{
-  margin-left: 25%;
+  margin-left: 35%;
   width: 10%; display: block;
   animation: cloudAnim 13s infinite;
 }
@@ -186,9 +185,13 @@ h3{
 /*Fade Down Animation*/
 /*===============================================*/
 @keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(150%);
+  }
   to {
     opacity: 1;
-    transform: translateY(100%);
+    transform: translateY(200%);
   }
 }
 /*===============================================*/
@@ -253,7 +256,7 @@ h3{
     transform: translateY(0%);
   }
   50% {
-    transform: translateY(-30%);
+    transform: translateY(-5%);
   }
   100% {
     transform: translateY(0%);
