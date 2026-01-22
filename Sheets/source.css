@@ -9,58 +9,12 @@
 */
 
 
-/*Buttons*/
-/************************************************/
-
-/*Go Back to Welcome Page*/
-.goBackButton{
-  /*Font size and style*/
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
-    border-radius: 10px;
-    border-color: transparent;
-    background-color: gray;
-    height: 50px;
-    width: 100px;
-
-  /*Change the cursor upon the user hovering*/
-    cursor: pointer;
-}
-
-/*Change the color of the button upon hovering*/
-.goBackButton:hover{
-   background-color: #6484db;
-}
+/*Buttons & Navigation*/
 /************************************************/
 
 
-/*Images*/
 /************************************************/
 
-/*SC4 Logo*/
-.sc4Logo{
-  /*Set the dimensions of the image*/
-    width: 300px;
-    height: 300px;
-}
-
-
-/*ASU Logo*/
-.asuLogo{
-  /*Set the dimensions of the image*/
-    width: 500px;
-    height: 300px;
-}
-
-
-/*Invert the color of the github logo*/
-.invertImageColor{
-  /*Invert the image color and set positioning*/
-  filter: invert(100%);
-  position: relative;
-  top: -30px;
-}
-/************************************************/
 
 
 /*Font Style & Size of text*/
@@ -70,6 +24,8 @@ body{
   /*Font Styling*/
   font-size: 20px;
   background-color: black;
+  padding: 0;
+  margin: 0;
   
   /*Text Alignment*/  
   text-align: center;
@@ -79,8 +35,8 @@ body{
 /*About Me Header*/
 h1{
   /*Set the font size and style*/
-  font-size: 65px;
   -webkit-text-fill-color: white;
+  font-size: 100px;
 }
 
 
@@ -125,7 +81,60 @@ h3{
   -webkit-text-fill-color: #002650;
 }
 
+/************************************************/
 
+
+/*Images*/
+/************************************************/
+
+/*SC4 Logo*/
+.sc4Logo{
+  /*Set the dimensions of the image*/
+    width: 300px;
+    height: 300px;
+}
+
+
+/*ASU Logo*/
+.asuLogo{
+  /*Set the dimensions of the image*/
+    width: 550px;
+    height: 300px;
+}
+
+
+/*Invert the color of the github logo*/
+.invertImageColor{
+  /*Invert the image color and set positioning*/
+  filter: invert(100%);
+  position: relative;
+  top: -30px;
+}
+
+
+/*Beach Background Image*/
+.beachBackground{
+
+  width: 100%; display: block;
+  object-fit: contain;
+}
+
+
+/*Beach Background Image*/
+.duneBackground{
+
+  width: 50%; display: block;
+}
+
+
+/*Birds flying*/
+.scorpionManz{
+
+  /*Set the dimensions of the image*/
+  position: absolute; top: 0; left: 0; width:20%; height:100%;
+  animation: scorpionSneak 3s;
+  transform: translateX(10%)
+}
 
 /************************************************/
 
@@ -133,29 +142,41 @@ h3{
 
 /*Animation & Art*/
 /************************************************/
-/*TEST OF ARTISTIC SKILLS! MAKE A cactus!*/
-/*'About Me' art container*/
 
-/*Container for the placement cactus sprite/image*/
-.cactus{
-  /*Pixels & Position*/
-    height: 100px;
-    width: 100px;
-    position: absolute;
-    top: 54px;
-    rotate: 5deg;
-}
-  
+.welcomeText{
+  opacity: 0;
+  transform: translateY(20px); /*Start Below Normal*/
+  animation: fadeUp 2s ease-out forwards;
 
-/*DEBUG OBJECT [RED CIRCLE]*/
-.circle0{
-  height: 50px;
-  width: 50px;
-  border-radius: 50px;
-  background-color: red;
-  position: absolute;
-  top: 200px;
 }
+
+
+/*Fade up Animation*/
+/*===============================================*/
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+/*===============================================*/
+
+
+/*Fade Left to Right Animation*/
+/*===============================================*/
+@keyframes scorpionSneak {
+  from {
+    opacity: 0;
+    transform: scale(1) translateX(0%);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateX(10%);
+  }
+}
+/*===============================================*/
+
+
 /************************************************/
 
 
@@ -165,11 +186,16 @@ h3{
 /*Encapsulating vertical alignment for the page*/
 .vertical0{
   text-align: center;
-  
-  /*BELOW IS FOR OUTLINING YOUR BOX FOR DEBUGGING*/
-  /*DELETE BEFORE LAUNCH!!*/
-  /*padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;*/
 }
 /************************************************/
+
+
+/*
+[Generative AI Used]: ChatGPT (OpenAI, January 21-22, 2026) 
+
+[Purpose]: Used AI for examples of animations and how to implement dynamic scaling into my program.
+
+[Note]: 
+  The fade in and scorpion walk animations are courtesy of chat. 
+  Just needed a quick refresher so being able to copy n paste it in was nice.
+  As alwasy I marked off the AI generated code with /*================*/
