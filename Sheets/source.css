@@ -9,6 +9,9 @@
 */
 
 
+
+
+
 /*Buttons & Navigation*/
 /************************************************/
 
@@ -17,8 +20,63 @@
 
 
 
-/*Font Style & Size of text*/
+/*Text & Native HTML Element Styling*/
 /************************************************/
+
+/*Name on the Intro Page*/
+.introName{
+
+  padding: 2%;
+  font-size: 3vw;
+  font-family: "GothicPixel";
+
+
+  /*=====================================*/
+  background: linear-gradient(
+      330deg,
+      red 5%, orange 75%
+  );
+
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  /*=====================================*/
+}
+
+
+
+/*Set the font size and style*/
+header{
+
+  padding: 1%;
+
+  /*=====================================*/
+  background: linear-gradient(
+    to top,
+    black 80%, white 200%, gray 200%
+  );
+  /*=====================================*/
+
+}
+
+/*Set the font size and style*/
+footer{
+
+  padding: 2%;
+  font-size: 1vw;  
+  color: white;
+
+  /*=====================================*/
+  background: linear-gradient(
+    to top,
+    black 80%, white 200%, gray 200%
+  );
+  /*=====================================*/
+
+}
+
+
 /*Set the font size and style*/
 body{
   /*Font Styling*/
@@ -32,15 +90,30 @@ body{
 }  
 
 
+/*Link Format*/
 a{
-  color: white;
+
+  font-family: "GothicPixel";
+  text-decoration: none;
+
+  background: linear-gradient(
+      330deg,
+      red 5%, orange 75%
+  );
+
+
+  /*=====================================*/
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  /*=====================================*/
+
   padding: 2%;
-  font-size: 1.5vw;
 }
 
 
 a:hover{
-  color: purple;
+  color: red;
 }
 
 
@@ -141,7 +214,7 @@ h3{
   font-size: 3.5vw;
   transform: translateY(200%);
   opacity: 0;
-  animation: fadeInOut 2s ease-out forwards; 
+  animation: fadeIn 2s ease-out forwards; 
   animation-delay: 1.5s;
   position: relative;
   z-index: 1;
@@ -158,7 +231,7 @@ h3{
   padding: 3%;
   margin-top: -6.5%;
   animation-delay: 2s;
-  animation: fadeUp 3s ease-in;
+  animation: fadeIn 3s ease-in;
 }
 
 
@@ -190,7 +263,7 @@ h3{
 .moon{
   margin-left: -30%;
   width: 10%; display: block;
-  animation: fadeInOut 2s ease-in, planetBob 5s ease-in-out infinite;
+  animation: fadeIn 2s ease-in, planetBob 5s ease-in-out infinite;
 }
 
 
@@ -254,7 +327,7 @@ h3{
 
 
 /*Fade In Animation*/
-@keyframes fadeInOut{
+@keyframes fadeIn{
   from{opacity:0;}
   to{opacity: 1;}
 }
@@ -320,9 +393,19 @@ h3{
 }
 /*===============================================*/
 
+/************************************************/
 
 
+/*Custom Fonts*/
+/************************************************/
 
+/*===============================================*/
+@font-face{
+  font-family: "GothicPixel";
+  src: 
+    url("../Fonts/old-english-gothic-pixel-font/OldEnglishGothicPixelRegular-ow2Bo.ttf") format("truetype");
+}
+/*===============================================*/
 
 /************************************************/
 
