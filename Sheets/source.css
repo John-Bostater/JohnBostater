@@ -154,16 +154,20 @@ h3{
 
   /*Set the font size and style*/
   font-size: 50px;
+/*
   font-family: Georgia, 'Times New Roman', Times, serif;
+*/
+  font-family: GothicPixel;
   -webkit-text-fill-color: #7B0000;
 }
 
 
 /*SC4 Header Text*/
 .sc4HeaderText{
+
   /*Set the font size and style*/
   font-size: 50px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: GothicPixel;
   -webkit-text-fill-color: #002650;
 }
 
