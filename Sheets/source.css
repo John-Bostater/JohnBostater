@@ -98,7 +98,7 @@ a{
 
   background: linear-gradient(
       to bottom,
-      purple 10%, magenta 10%, white 85%
+      purple 10%, blue 10%, white 90%
   );
 
 
@@ -172,6 +172,15 @@ h3{
 
 /*Images*/
 /************************************************/
+
+/*Photo of me*/
+.mePhoto{
+
+  border: 3px solid white;
+  width: 30%;
+  image-rendering: crisp-edges;
+}
+
 
 /*SC4 Logo*/
 .sc4Logo{
