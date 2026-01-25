@@ -80,7 +80,7 @@ footer{
 /*Set the font size and style*/
 body{
   /*Font Styling*/
-  font-size: 20px;
+  font-size: 1vw;
   background-color: black;
   padding: 0;
   margin: 0;
@@ -145,7 +145,7 @@ h3{
 .body-text-0{
   /*Font Styling*/
   -webkit-text-fill-color: gray;  
-  font-size: 20px;
+  font-size: 1vh;
 }
 
 
