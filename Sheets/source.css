@@ -32,15 +32,27 @@ body{
 }  
 
 
-/*About Me Header*/
-h1{
-  /*Set the font size and style*/
-  -webkit-text-fill-color: white;
-  font-size: 5vw;
+a{
+  color: white;
+  padding: 2%;
+  font-size: 1.5vw;
 }
 
 
-/*Smaller header*/
+a:hover{
+  color: purple;
+}
+
+
+h1{
+  /*Set the font size and style*/
+  font-family: 'Times New Roman', Times, serif;
+  -webkit-text-fill-color: white;
+  font-size: 60px;
+  z-index: 2;
+}
+
+
 h2{
   /*Set the font size and style*/
   font-size: 30px;
@@ -50,28 +62,17 @@ h2{
 
 h3{
   /*Set the font size and style*/
-  font-size: 50px;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 35px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   -webkit-text-fill-color: #6c6c6c;
 }
+
 
 /*Body text #1, 'About Me', we reference via 'id'*/
 .body-text-0{
   /*Font Styling*/
   -webkit-text-fill-color: gray;  
-  font-size: 1vw;
-}
-
-
-/*Text box for the main page*/
-.textBox{
-
-  /*Font Styling*/
-  -webkit-text-fill-color: gray;  
-  font-size: 1.5vw;
-  border: 2px solid white;
-  padding: 7%;
-  margin-top: -6.5%;
+  font-size: 20px;
 }
 
 
@@ -117,38 +118,12 @@ h3{
 
 /*Invert the color of the github logo*/
 .invertImageColor{
+
   /*Invert the image color and set positioning*/
   filter: invert(100%);
   position: relative;
   top: -30px;
 }
-
-
-
-/*Beach Background Image*/
-.duneBackground{
-
-  width: 30%; height: 3%; display: block;
-}
-
-
-/*Scorpion Moving*/
-.scorpionManz{
-
-  /*Set the dimensions of the image*/
-  width:3.5%; height:3.5%; display: block;
-  animation: scorpionSneak 2s ease-in;
-  transform: translate(550%, -220%);
-}
-
-
-/*Cactus*/
-.cactus{
-
-  width: 2%; height: 4%; display: block;
-  transform: translate(600%, -105%)
-}
-
 
 /************************************************/
 
@@ -157,28 +132,96 @@ h3{
 /*Animation & Art*/
 /************************************************/
 
+/* Welcome Text on the mainpage*/
+.welcomeText{
+
+  /*Set the font size and style*/
+  font-family: 'Times New Roman', Times, serif;
+  -webkit-text-fill-color: white;
+  font-size: 3.5vw;
+  transform: translateY(200%);
+  opacity: 0;
+  animation: fadeInOut 2s ease-out forwards; 
+  animation-delay: 1.5s;
+  position: relative;
+  z-index: 1;
+}
+
+
+/*Text box for the main page*/
+.textBox{
+
+  /*Font Styling*/
+  -webkit-text-fill-color: gray;  
+  font-size: 1vw;
+  border: 2px solid white;
+  padding: 3%;
+  margin-top: -6.5%;
+  animation-delay: 2s;
+  animation: fadeUp 3s ease-in;
+}
+
+
+
+/*Beach Background Image*/
+.duneBackground{
+  width: 20%; height: 2%; display: block;
+  z-index: 0;
+}
+
+/*Sunset Sky for the scene*/
+.sunsetSky{
+  inset: 0;
+  position: absolute;
+  margin-top: 3.1%;
+  margin-left: 30%;
+  width: 40%; height: 50%; display: block;
+}
+
+
+/*Cactus*/
+.cactus{
+  width: 2%; height: 4%; display: block;
+  transform: translate(600%, -105%);
+}
+
 
 /*Moon & Sun*/
 .moon{
-  margin-left: 25%;
+  margin-left: -30%;
   width: 10%; display: block;
-  transform: translateY(-200%);
-  animation: fadeInOut 2s ease-in, planetBob 10s ease-in-out infinite;
+  animation: fadeInOut 2s ease-in, planetBob 5s ease-in-out infinite;
 }
 
 
-/* Welcome Text on the mainpage*/
-.welcomeText{
+/*Scorpion*/
+.scorpionManz{
+
+  /*Set the dimensions of the image*/
   opacity: 0;
-  animation: fadeDown 2s ease-out forwards;
+  width:3.5%; height:3.5%; display: block;
+  animation: scorpionSneak 2s ease-in forwards;
+  animation-delay: 1s;
+  transform: translate(200%, -220%);
 }
 
 
-/*Cloud*/
-.cloud{
-  margin-left: 35%;
+/*Cloud 0*/
+.cloud0{
+  margin-top: -2%;
+  margin-left: -20%;
   width: 10%; display: block;
-  animation: cloudAnim 13s infinite;
+  animation: cloudAnim 14s infinite;
+}
+
+/*Cloud 1*/
+.cloud1{
+  opacity: 0;
+  margin-left: 20%;
+  margin-top: -2%;
+  width: 10%; display: block;
+  animation: cloudAnim 14s infinite;
+  animation-delay: 1.5s;
 }
 
 
@@ -187,19 +230,33 @@ h3{
 @keyframes fadeDown {
   from {
     opacity: 0;
-    transform: translateY(150%);
+    transform: translateY(175%);
   }
   to {
-    opacity: 1;
+    opacity: .75;
     transform: translateY(200%);
   }
 }
 /*===============================================*/
 
-/*Fade In and Out Animation*/
+
+/*Fade Up Animation for the Introduction text (Intro page)*/
+@keyframes fadeUp{
+  from {
+    opacity: 0;
+    transform: translateY(25%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+
+/*Fade In Animation*/
 @keyframes fadeInOut{
   from{opacity:0;}
-  to{opacity: 1;}
+  to{opacity: .1;}
 }
 
 
@@ -220,27 +277,26 @@ h3{
 }
 
 
-/*Fade Left to Right Animation*/
+/*Fade Right to Left Animation*/
 /*===============================================*/
 @keyframes scorpionSneak {
   from {
     opacity: 0;
-    transform: scale(1) translate(800%, -220%);
+    transform: scale(1) translate(300%, -220%);
   }
   to {
     opacity: 1;
-    transform: scale(1) translate(550%, -220%);
+    transform: scale(1) translate(200%, -220%);
   }
 }
 /*===============================================*/
-
 
 
 /*Fade Up Animation*/
 @keyframes planetRise {
   from {
     opacity: 0;
-    transform: scale(1) translateY(-100%);
+    transform: scale(1) translateY(-200%);
   }
   to {
     opacity: 1;
@@ -253,13 +309,13 @@ h3{
 /*===============================================*/
 @keyframes planetBob {
   0% {
-    transform: translateY(0%);
+    transform: translateY(25%);
   }
   50% {
-    transform: translateY(-5%);
+    transform: translateY(35%);
   }
   100% {
-    transform: translateY(0%);
+    transform: translateY(25%);
   }
 }
 /*===============================================*/

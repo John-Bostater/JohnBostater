@@ -39,19 +39,33 @@
 <!--Vertical alignment of all the text in the document-->
 <div class="vertical0">    
       
+
+  <!------------------------------>
+  <!-------LEFT OFF HERE---------->
+  <!------------------------------>
+
+  <!-- Make the welcome text either fiery like the sky or sky blue with whiteish bluring around the edges 
+    For the Screenshot of the welcome text: (screenshot against black background put into gimp, then pixelate to either 16 or 32 bit!)
+  -->
+
   <!--Welcoming Text-->
-  <h1 class="welcomeText">Welcome!</h1>  
-
-  <!--Sun-->
-  <img src="Images/sun.png" class="moon"></img>
-
-  <!--Cloud-->
-  <img src="Images/cloud.png" class="cloud"></img>
+  <div class="welcomeText">John Bostater</div>  
 
 
   <!--Desert Scene-->
-  <div style="position: relative; width: 100%; max-width: 100%; justify-items: center;">
+  <div style="position: relative; width: 100%; max-width: 100%; justify-items: center; overflow: hidden;">
 
+    <!--Skybackground-->
+    <img src="Images/yellowsky.jpg" class="sunsetSky"></img>
+
+    <!--Sun-->
+    <img src="Images/sun.png" class="moon"></img>
+
+    <!--Cloud-->
+    <img src="Images/cloud.png" class="cloud0"></img>
+
+    <!--Cloud2-->
+    <img src="Images/cloud.png" class="cloud1"></img>
 
 
     <!--Dune Container-->
@@ -62,7 +76,6 @@
       <img src="Images/dune.png" class="duneBackground" style="transform: scaleX(-1)">
 
     </div>
-
 
 
     <!--Cactus-->
@@ -76,8 +89,19 @@
     <!--Longer Welcome to the visitors!-->
     <div class="textBox">
       Thank you for stopping by and visiting my personal website. <br>
-      Below you can find links that will take you to my personal webpage 
+      Feel free to click any of the links below to learn more about me and my work. <br>
     </div>
+
+  </div>
+
+  <!--Content Link Container-->
+  <div style="padding: 3%; animation: fadeUp 2s ease-in forwards; animation-delay: 2s; opacity: 0;">
+
+    <!--Content Links-->
+    <a href="Pages/AboutMe.html"> About Me </a>
+    <a href="Pages/Education.html"> Education </a>
+    <a href="Pages/Projects.html"> Projects </a>
+    <a href="Pages/Gallery.html"> Digital Gallery </a>
 
   </div>
 
