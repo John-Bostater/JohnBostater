@@ -240,7 +240,7 @@ h3{
   /*Font Styling*/
   -webkit-text-fill-color: gray;  
   font-size: 1vw;
-  border: 2px solid white;
+  border: .25vw solid white;
   padding: 3%;
   margin-top: -6.5%;
   animation-delay: 2s;
