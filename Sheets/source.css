@@ -87,7 +87,7 @@ body{
 
 /*Link Format*/
 a{
-
+  font-size: 1.5vw;
   font-family: "GothicPixel";
   text-decoration: none;
 
@@ -213,21 +213,6 @@ h3{
 /*Animation & Art*/
 /************************************************/
 
-/* Welcome Text on the mainpage*/
-.welcomeText{
-
-  /*Set the font size and style*/
-  font-family: 'Times New Roman', Times, serif;
-  -webkit-text-fill-color: white;
-  font-size: 3.5vw;
-  transform: translateY(200%);
-  opacity: 0;
-  animation: fadeIn 2s ease-out forwards; 
-  animation-delay: 1.5s;
-  position: relative;
-  z-index: 1;
-}
-
 
 /*Text box for the main page*/
 .textBox{
@@ -246,7 +231,7 @@ h3{
 
 /*Beach Background Image*/
 .duneBackground{
-  width: 20%; height: 2%; display: block;
+  width: 20%; height: 2%; 
   z-index: 0;
 }
 
@@ -256,27 +241,27 @@ h3{
   position: absolute;
   margin-top: 3.1%;
   margin-left: 30%;
-  width: 40%; height: 50%; display: block;
+  width: 40%; height: 50%; display: flex;
 }
 
 
 /*Cactus*/
 .cactus{
-  width: 2%; height: 4%; display: block;
-  transform: translate(6vw, -3.5vh);
+  width: 2%; height: 4%; display: flex;
+  transform: translate(10vw, -3.8vh);
 }
 
 /*Cactus*/
 .cactus0{
-  width: 2%; height: 4%; display: block;
-  transform: translate(-3vw, -8vh);
+  width: 2%; height: 4%; display: flex;
+  transform: translate(-6vw, -8.5vh);
 }
 
 
 /*Moon & Sun*/
 .moon{
-  transform: translate(0, -130);
-  width: 10%; display: block;
+
+  width: 10%; display: flex;
   animation: fadeIn 2s ease-in, planetBob 5s ease-in-out infinite;
 }
 
@@ -429,14 +414,8 @@ h3{
 
 /*Encapsulating vertical alignment for the page*/
 .vertical0{
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  max-height: 100vh;
-  overflow: hidden;
-  margin: 0 auto;
-  position: relative;
-  text-align: center;
-  justify-content: center;
+
+  align-content: center;
 }
 /************************************************/
 
