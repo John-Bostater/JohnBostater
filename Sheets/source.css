@@ -248,13 +248,13 @@ h3{
 /*Cactus*/
 .cactus{
   width: 2%; height: 4%; display: flex;
-  transform: translate(10vw, -3.8vh);
+  transform: translate(600%, -105%);
 }
 
 /*Cactus*/
 .cactus0{
   width: 2%; height: 4%; display: flex;
-  transform: translate(-6vw, -8.5vh);
+  transform: translate(-500%, -480%);
 }
 
 
