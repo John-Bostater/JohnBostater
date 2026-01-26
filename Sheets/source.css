@@ -241,27 +241,27 @@ h3{
   position: absolute;
   margin-top: 3.1%;
   margin-left: 30%;
-  width: 40%; height: 50%; display: flex;
+  width: 40%; height: 50%; display: block;
 }
 
 
 /*Cactus*/
 .cactus{
-  width: 2%; height: 4%; display: flex;
-  transform: translate(10vw, -3.8vh);
+  width: 2%; height: 4%; display: block;
+  transform: translate(200%, -105%);
 }
 
 /*Cactus*/
 .cactus0{
-  width: 2%; height: 4%; display: flex;
-  transform: translate(-6vw, -8.5vh);
+  width: 2%; height: 4%; display: block;
+  transform: translate(-300%, -475%);
 }
 
 
 /*Moon & Sun*/
 .moon{
 
-  width: 10%; display: flex;
+  width: 10%; display: block;
   animation: fadeIn 2s ease-in, planetBob 5s ease-in-out infinite;
 }
 
