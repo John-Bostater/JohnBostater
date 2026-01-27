@@ -27,7 +27,7 @@
 .introName{
 
   padding-top: 2%;
-  font-size: 4dvw;
+  font-size: clamp(40px, 4dvw, 120px);
   font-family: "GothicPixel";
 
 
@@ -64,7 +64,7 @@ header{
 footer{
 
   padding: 2%;
-  font-size: 1.5dvw;  
+  font-size: clamp(14px, 1.5dvw, 16px);  
   color: white;
 
   /*=====================================*/
@@ -79,7 +79,7 @@ footer{
 
 /*Set the font size and style*/
 body{
-  /*Font Styling*/
+
   background-color: black;
   text-align: center;
 }  
@@ -87,7 +87,8 @@ body{
 
 /*Link Format*/
 a{
-  font-size: 2.5dvw;
+
+  font-size: clamp(30px, 2.5dvw, 40px);  
   font-family: "GothicPixel";
   text-decoration: none;
 
@@ -103,7 +104,7 @@ a{
   color: transparent;
   /*=====================================*/
 
-  padding: 2%;
+  padding: 1%;
 }
 
 
@@ -138,9 +139,10 @@ h3{
 
 /*Body text #1, 'About Me', we reference via 'id'*/
 .body-text-0{
+
   /*Font Styling*/
   -webkit-text-fill-color: gray;  
-  font-size: 2dvh;
+  font-size: clamp(.5rem, 2dvw, 1rem);
 }
 
 
@@ -219,13 +221,13 @@ h3{
 
   /*Font Styling*/
   -webkit-text-fill-color: gray;  
-  font-size: 1.75dvw;
+  font-size: clamp(25px, 1dvw, 26px);
   border: .25dvw solid white;
-  padding: 3%;
+  margin-top: 3%;
+  padding: 2%;
   width: 45%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: -6.5%;
   animation-delay: 2s;
   animation: fadeIn 3s ease-in;
 }
@@ -234,7 +236,6 @@ h3{
 
 /*Beach Background Image*/
 .duneBackground{
-  margin-top: 2%;
   width: 25%; height: 2%; 
   z-index: 0;
 }
@@ -245,7 +246,8 @@ h3{
   position: absolute;
   margin-top: 2.1%;
   margin-left: 25%;
-  width: 50%; height: 55%; display: flex;
+  width: 50%; 
+  display: block;
 }
 
 
@@ -253,7 +255,7 @@ h3{
 .cactus{
   width: 2%; height: 5%; display: flex;
   margin-left: 40%;
-  transform: translateY(-105%);
+  transform: translateY(66%);
 }
 
 /*Cactus*/
@@ -280,7 +282,6 @@ h3{
   margin-left: 45%;
   animation: scorpionSneak 2s ease-in forwards;
   animation-delay: 1s;
-  transform: translate(200%, -220%);
 }
 
 
@@ -342,15 +343,15 @@ h3{
 @keyframes cloudAnim{
   0% {
     opacity: 0;
-    transform: translateY(0%);
+    transform: translateY(100%);
   }
   50% {
     opacity: 1;
-    transform: translateY(-10%);
+    transform: translateY(50%);
   }
   100% {
     opacity: 0;
-    transform: translateY(0%);
+    transform: translateY(100%);
   }
 }
 
@@ -360,11 +361,11 @@ h3{
 @keyframes scorpionSneak {
   from {
     opacity: 0;
-    transform: scale(1) translate(300%, -220%);
+    transform: scale(1) translate(500%, -10%);
   }
   to {
     opacity: 1;
-    transform: scale(1) translate(200%, -220%);
+    transform: scale(1) translate(400%, -10%);
   }
 }
 /*===============================================*/
@@ -374,11 +375,11 @@ h3{
 @keyframes planetRise {
   from {
     opacity: 0;
-    transform: scale(1) translateY(-200%);
+    transform: scale(1) translateY(-300%);
   }
   to {
     opacity: 1;
-    transform: scale(1) translateY(-100%);
+    transform: scale(1) translateY(-200%);
   }
 }
 
@@ -387,13 +388,13 @@ h3{
 /*===============================================*/
 @keyframes planetBob {
   0% {
-    transform: translateY(50%);
+    transform: translateY(135%);
   }
   50% {
-    transform: translateY(80%);
+    transform: translateY(155%);
   }
   100% {
-    transform: translateY(50%);
+    transform: translateY(135%);
   }
 }
 /*===============================================*/
