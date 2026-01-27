@@ -27,7 +27,7 @@
 .introName{
 
   padding-top: 2%;
-  font-size: 3dvw;
+  font-size: 4dvw;
   font-family: "GothicPixel";
 
 
@@ -64,7 +64,7 @@ header{
 footer{
 
   padding: 2%;
-  font-size: 1dvw;  
+  font-size: 1.5dvw;  
   color: white;
 
   /*=====================================*/
@@ -87,7 +87,7 @@ body{
 
 /*Link Format*/
 a{
-  font-size: 1.5dvw;
+  font-size: 2.5dvw;
   font-family: "GothicPixel";
   text-decoration: none;
 
@@ -219,7 +219,7 @@ h3{
 
   /*Font Styling*/
   -webkit-text-fill-color: gray;  
-  font-size: 1.5dvw;
+  font-size: 1.75dvw;
   border: .25dvw solid white;
   padding: 3%;
   width: 45%;
@@ -234,7 +234,8 @@ h3{
 
 /*Beach Background Image*/
 .duneBackground{
-  width: 20%; height: 2%; 
+  margin-top: 2%;
+  width: 25%; height: 2%; 
   z-index: 0;
 }
 
@@ -243,15 +244,15 @@ h3{
   inset: 0;
   position: absolute;
   margin-top: 2.1%;
-  margin-left: 30%;
-  width: 40%; height: 50%; display: flex;
+  margin-left: 25%;
+  width: 50%; height: 55%; display: flex;
 }
 
 
 /*Cactus*/
 .cactus{
   width: 2%; height: 5%; display: flex;
-  margin-left: 45%;
+  margin-left: 40%;
   transform: translateY(-105%);
 }
 
@@ -286,7 +287,7 @@ h3{
 /*Cloud 0*/
 .cloud0{
   margin-top: -2%;
-  margin-left: 55%;
+  margin-left: 58%;
   width: 10%; display: flex;
   animation: cloudAnim 14s infinite;
 }
@@ -294,7 +295,7 @@ h3{
 /*Cloud 1*/
 .cloud1{
   opacity: 0;
-  margin-left: 34%;
+  margin-left: 32%;
   margin-top: -2%;
   width: 10%; display: flex;
   animation: cloudAnim 14s infinite;
@@ -419,7 +420,6 @@ h3{
 
 /*Encapsulating vertical alignment for the page*/
 .vertical0{
-
   text-align: center;
 }
 /************************************************/
@@ -434,4 +434,14 @@ h3{
   The fade in and scorpion walk animations are courtesy of chat. 
   Just needed a quick refresher so being able to copy n paste it in was nice.
   As alwasy I marked off the AI generated code between comments marked /*================
+*/
+
+
+
+/*
+[Dev Note to self]: 
+
+  Use  transform: translateY(y) to place sprites vertically.
+  
+  MUST use margin-left or margin-right to place sprites along x-axis.
 */
