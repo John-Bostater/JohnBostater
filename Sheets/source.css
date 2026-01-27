@@ -250,16 +250,14 @@ h3{
 
 /*Cactus*/
 .cactus{
-  width: 2%; height: 4%; display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  transform: translate(400%, -105%);
+  width: 2%; height: 5%; display: flex;
+  margin-left: 45%;
+  transform: translateY(-105%);
 }
 
 /*Cactus*/
 .cactus0{
   width: 2%; height: 4%; display: flex;
-  transform: translate(-500%, -480%);
 }
 
 
@@ -267,6 +265,7 @@ h3{
 .moon{
 
   width: 10%; display: flex;
+  margin-left: 45%;
   animation: fadeIn 2s ease-in, planetBob 5s ease-in-out infinite;
 }
 
@@ -277,6 +276,7 @@ h3{
   /*Set the dimensions of the image*/
   opacity: 0;
   width:3.5%; height:3.5%; display: flex;
+  margin-left: 45%;
   animation: scorpionSneak 2s ease-in forwards;
   animation-delay: 1s;
   transform: translate(200%, -220%);
@@ -286,7 +286,7 @@ h3{
 /*Cloud 0*/
 .cloud0{
   margin-top: -2%;
-  margin-left: -20%;
+  margin-left: 55%;
   width: 10%; display: flex;
   animation: cloudAnim 14s infinite;
 }
@@ -294,7 +294,7 @@ h3{
 /*Cloud 1*/
 .cloud1{
   opacity: 0;
-  margin-left: 20%;
+  margin-left: 34%;
   margin-top: -2%;
   width: 10%; display: flex;
   animation: cloudAnim 14s infinite;
