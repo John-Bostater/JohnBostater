@@ -131,18 +131,26 @@ h2{
 
 h3{
   /*Set the font size and style*/
-  font-size: 35px;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: clamp(40px, 2dvw, 50px);
+  font-family: 'Times New Roman', Times, serif;
   -webkit-text-fill-color: #6c6c6c;
 }
 
 
-/*Body text #1, 'About Me', we reference via 'id'*/
+/*Body text #0, 'About Me', we reference via 'id'*/
 .body-text-0{
 
   /*Font Styling*/
-  -webkit-text-fill-color: gray;  
-  font-size: clamp(.5rem, 2dvw, 1rem);
+  -webkit-text-fill-color: gray;
+  padding: 2%;  
+  font-size: clamp(20px, 2dvw, 22px);
+}
+
+.body-text-1{
+
+  /*Font Styling*/
+  -webkit-text-fill-color: gray;
+  font-size: clamp(20px, 2dvw, 22px);
 }
 
 
@@ -153,9 +161,11 @@ h3{
   font-size: 50px;
 /*
   font-family: Georgia, 'Times New Roman', Times, serif;
+  -webkit-text-fill-color: #7B0000;
+  -webkit-text-fill-color: #d4af37;
 */
   font-family: GothicPixel;
-  -webkit-text-fill-color: #7B0000;
+  -webkit-text-fill-color: #7F6921;
 }
 
 
@@ -221,9 +231,9 @@ h3{
 
   /*Font Styling*/
   -webkit-text-fill-color: gray;  
-  font-size: clamp(25px, 1dvw, 26px);
+  font-size: clamp(18px, 1dvw, 26px);
   border: .25dvw solid white;
-  margin-top: 3%;
+  margin-top: 4%;
   padding: 2%;
   width: 45%;
   margin-left: auto;
