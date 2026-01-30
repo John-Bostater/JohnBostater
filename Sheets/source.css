@@ -82,6 +82,7 @@ body{
 
   background-color: black;
   text-align: center;
+  overflow-x: hidden;
 }  
 
 
@@ -225,21 +226,25 @@ h3{
 /*Animation & Art*/
 /************************************************/
 
+.image{
+width: 100%;
+}
+
 
 /*Text box for the main page*/
 .textBox{
 
   /*Font Styling*/
   -webkit-text-fill-color: gray;  
-  font-size: clamp(18px, 1dvw, 26px);
+  font-size: clamp(18px, 1dvw, 30px);
   border: .25dvw solid white;
   margin-top: 4%;
-  padding: 2%;
+  padding: 1.5dvw;
   width: 45%;
   margin-left: auto;
   margin-right: auto;
-  animation-delay: 2s;
-  animation: fadeIn 3s ease-in;
+  animation-delay: .5s;
+  animation: fadeIn 2s ease-in;
 }
 
 
@@ -437,6 +442,8 @@ h3{
 
 
 /*
+THIS AI STATEMENT APPLIES TO [ALL FILES: HTML, CSS, JS] WITHIN MY PERSONAL WEBSITE
+
 [Generative AI Statement]: ChatGPT (OpenAI, January 21, 2026 to Indefinite End of Project) 
 
 [Purpose]: Used AI for examples of animations and how to implement dynamic scaling into my program.
@@ -445,8 +452,8 @@ h3{
   The fade in and scorpion walk animations are courtesy of chat. 
   Just needed a quick refresher so being able to copy n paste it in was nice.
   As alwasy I marked off the AI generated code between comments marked /*================
-*/
 
+*/
 
 
 /*

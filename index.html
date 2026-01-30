@@ -30,9 +30,10 @@
     
     <!-- Set the link to the CSS documentation/styles to be used-->
       <link rel="stylesheet" href="Sheets/source.css"> </link>
-  
+
     <!--Call upon the Java Script File-->
-      <script src="Scripts/index.js"></script>  
+
+
 </head>
 
 
@@ -45,7 +46,7 @@
 <div class="vertical0">    
 
   <!--Desert Scene-->
-  <div style="display: flex; flex-direction: column; position: relative; overflow: hidden;">
+  <div id="image" style="display: flex; flex-direction: column; position: relative;">
 
     <!--Skybackground-->
     <img src="Images/yellowsky.jpg" class="sunsetSky"></img>
@@ -61,7 +62,7 @@
 
 
     <!--Dune Container-->
-    <div style="display: flex; justify-content: center; transform: translateY(125%); height: auto">
+    <div style="display: flex; justify-content: center; transform: translateY(125%); height: auto;">
 
       <!--Dunes-->
       <img src="Images/dune.png" class="duneBackground" style="transform: scaleX(-1.01); margin-left: 1px;">
@@ -95,7 +96,7 @@
 </div>
 
 <!--Content Link Container-->
-<div style="padding: 4%; animation: fadeUp 2s ease-in forwards; animation-delay: 2s; opacity: 0;">
+<div style="padding: 4%; animation: fadeUp 1s ease-in forwards; animation-delay: .5s; opacity: 0;">
 
   <!--Content Links-->
   <a href="Pages/AboutMe.html"> About Me </a>
@@ -106,7 +107,31 @@
 </div>
 
 
+<!--Embedded Script for Resizing the Desert Scene for mobile/smaller resolution-->
+<script>
+
+  //Gather the Element via it's Id
+  const img = document.getElementById('image');
+
+  //Function and Event-handler for window resizing
+  //==========================================================
+  function resize() {
+    if (window.innerWidth <= 768) {
+      img.style.width = '175%';
+      img.style.marginLeft = '-37.5%';
+    } else {
+      img.style.width = '100%';
+      img.style.marginLeft = '0%';
+    }
+  }
+
+  window.addEventListener('resize', resize);
+  resize();
+  //==========================================================
+
+</script>
+
 <!--Footer Text & Links-->
-<footer> &copy; John Bostater 2026 </footer>
+<footer> &copy; John Bostater 2026. All Rights Reserved </footer>
 
 </html>
