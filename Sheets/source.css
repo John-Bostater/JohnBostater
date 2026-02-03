@@ -240,7 +240,7 @@ width: 100%;
   border: .25dvw solid white;
   margin-top: 4%;
   padding: 1.5dvw;
-  width: 45%;
+  width: clamp(300px, 35%, 35%);
   margin-left: auto;
   margin-right: auto;
   animation-delay: .5s;
